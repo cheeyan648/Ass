@@ -1,6 +1,6 @@
 <?php
     require '_base.php';
-
+    require_once 'connect.php';
     include '_head.php';
 
     $user_id = $_SESSION['user_id'] ?? null;

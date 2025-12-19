@@ -177,10 +177,7 @@ function temp($key, $value = null) {
     }
 }
 
-// Global PDO object
-$_db = new PDO('mysql:dbname=dbass', 'root', '', [
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ,
-]);
+
 
 // Global user object
 $user = $_SESSION['user'] ?? null;

@@ -1,6 +1,6 @@
 <?php
 $host = "food-db.c1ay6ksyw9rj.us-east-1.rds.amazonaws.com";        // or RDS endpoint
-$dbname = "food-db";        // your database name
+$dbname = "food_db";        // your database name
 $username = "admin";         // DB username
 $password = "food1234";             // DB password
 

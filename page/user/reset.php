@@ -28,14 +28,14 @@ if (is_post()) {
         // TODO: (2) Generate token id
         $id = sha1(uniqid() . rand());
 
-        // TODO: (3) Delete old and insert new token
-        $stm = $_db->prepare('
-            DELETE FROM token WHERE user_id = ?;
+        // Delete old token
+        $stm = $_db->prepare('DELETE FROM token WHERE user_id = ?');
+        $stm->execute([$u->user_id]);
 
-            INSERT INTO token (id, expire, user_id)
-            VALUES (?, ADDTIME(NOW(), "00:05"), ?)
-        ');
-        $stm->execute([$u->user_id, $id, $u->user_id]);
+        // Insert new token
+        $stm = $_db->prepare('INSERT INTO token (id, expire, user_id) VALUES (?, ADDTIME(NOW(), "00:05"), ?)');
+        $stm->execute([$id, $u->user_id]);
+
 
         // TODO: (4) Generate token url
         $url = base("page/user/token.php?id=$id");
@@ -69,7 +69,7 @@ if (is_post()) {
         $m->send();
 
         temp('info', 'Email sent');
-        redirect("/index.php?user_id=$user->user_id");
+        redirect("/index.php?user_id={$u->user_id}");
     }
 }
 

@@ -1,8 +1,8 @@
 <?php
+require_once '../connect.php';
+require_once '../_base.php';
 
-require '../_base.php';
-
-include '../admin/layout.php';
+require_once '../admin/layout.php';
 
 auth('Admin');
 

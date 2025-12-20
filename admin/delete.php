@@ -1,6 +1,7 @@
 <?php 
 
-require '../_base.php';
+require_once '../connect.php';
+require_once '../_base.php';
 
 if (is_post()) {
     $product_id = isset($_GET['p_id']) ? $_GET['p_id'] : null;

@@ -4,8 +4,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
     require_once 'connect.php';
-    include '_head.php';
-    require '_base.php';
+    require_once '_head.php';
+    require_once '_base.php';
 
     $user_id = $_SESSION['user_id'] ?? null;
 

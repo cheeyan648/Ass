@@ -65,7 +65,7 @@ if (is_post()) {
         if (!str_starts_with($f->type, 'image/')) {
         $_err['photo'] = 'Must be image';
     }
-    else if ($f->size > 1 * 1024 * 1024) {
+    else if ($f->size > 3 * 1024 * 1024) {
         $_err['photo'] = 'Maximum 1MB';
     }
 

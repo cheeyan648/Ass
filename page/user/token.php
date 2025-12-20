@@ -40,14 +40,14 @@ if (is_post()) {
 
     // DB operation
     if (!$_err) {
-        // TODO: Update user (password) based on token id + delete token
-        $stm = $_db->prepare('
-            UPDATE user SET password = SHA1(?)
-            WHERE user_id = (SELECT user_id FROM token WHERE id = ?);
+        // Update password
+        $stm = $_db->prepare('UPDATE user SET password = SHA1(?) WHERE user_id = (SELECT user_id FROM token WHERE id = ?)');
+        $stm->execute([$password, $id]);
 
-            DELETE FROM token WHERE id = ?;
-        ');
-        $stm->execute([$password, $id, $id]);
+        // Delete token
+        $stm = $_db->prepare('DELETE FROM token WHERE id = ?');
+        $stm->execute([$id]);
+
 
         temp('info', 'Record updated');
         redirect('./login.php');

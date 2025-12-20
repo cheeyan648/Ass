@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -25,10 +23,20 @@ function encode($value) {
 }
 
 // Obtain REQUEST (GET and POST) parameter
-function req($key, $value = null) {
-    $value = $_REQUEST[$key] ?? $value;
-    return is_array($value) ? array_map('trim', $value) : trim($value);
+function req($key, $default = '') {
+    if (!isset($_REQUEST[$key])) {
+        return $default;
+    }
+
+    $value = $_REQUEST[$key];
+
+    if (is_array($value)) {
+        return array_map('trim', $value);
+    }
+
+    return trim((string)$value);
 }
+
 
 // Generate <input type='text'>
 function html_text($key, $value = '', $attr = '') {

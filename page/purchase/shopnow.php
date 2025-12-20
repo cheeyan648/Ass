@@ -47,15 +47,19 @@ $products = $p->result;
 </div>
 
 <br><br>
-<div class="category">
+<div class="category-container">
     <?php foreach ($cat as $c): ?>
-        <?php if (isset($_SESSION['user'])): ?>
-            <a href="../../page/purchase/shopnow.php?user_id=<?= $user->user_id ?>&cat=<?= $c->category_name ?>">[ <?= $c->category_name ?> ]</a>
-        <?php else: ?>
-            <a href="page/puchase/shopnow.php?cat=<?= $c->category_name ?>"> <?= $c->category_name ?> </a>
-        <?php endif ?>
-    <?php endforeach ?>
+        <?php 
+            $link = isset($_SESSION['user']) 
+                ? "../../page/purchase/shopnow.php?user_id={$user->user_id}&cat={$c->category_name}" 
+                : "page/purchase/shopnow.php?cat={$c->category_name}";
+        ?>
+        <a href="<?= $link ?>" class="category-card">
+            <span><?= $c->category_name ?></span>
+        </a>
+    <?php endforeach; ?>
 </div>
+
 <br><br>
 <nav class="search">                       
     <form style="font-size: larger;" method="get" action="">

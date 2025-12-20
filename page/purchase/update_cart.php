@@ -1,5 +1,6 @@
 <?php
-require '../../_base.php';
+require_once '../../connect.php';
+require_once '../../_base.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $product_id = $_POST['product_id'];

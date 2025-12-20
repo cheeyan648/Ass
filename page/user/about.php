@@ -1,8 +1,8 @@
 <?php
 
-require '../../_base.php';
-
-include '../../_head.php';
+require_once '../../connect.php';
+require_once '../../_base.php';
+require_once '../../_head.php';
 
 ?>
 

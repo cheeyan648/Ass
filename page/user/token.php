@@ -1,5 +1,6 @@
 <?php
-include '../../_base.php';
+require_once '../../connect.php';
+require_once '../../_base.php';
 
 // ----------------------------------------------------------------------------
 

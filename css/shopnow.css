@@ -39,7 +39,7 @@ body {
 }
 
 .product-card {
-    width: 250px; /* fixed card width */
+    width: 180px; /* fixed card width */
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;

@@ -2,8 +2,6 @@
 require_once '../../connect.php';
 require_once '../../_base.php';
 
-auth('Member');
-
 // ----------------------------------------------------------------------------
 
 if (is_post()) {

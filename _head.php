@@ -1,4 +1,5 @@
 <?php
+require_once 'connect.php';
 require_once '_base.php';
 
 $user = $_SESSION['user'] ?? null;

@@ -159,7 +159,7 @@ if (is_post()){
             <label for="image">Product Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
             <label class="upload" tabindex="0">
             <input type="file" name="image" id="image" accept="image/*">                
-            <img id="preview" src="../image/photo.jpg" alt="Preview">
+            <img id="preview" src="../photos/photo.jpg" alt="Preview">
             </label>
             <?= err('image') ?><br>
 

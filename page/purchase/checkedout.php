@@ -8,11 +8,9 @@ $_db->beginTransaction();
 
 if ($_POST) {
     // Insert into order table (fix: use order_date, tquantity, tprice)
-    $stm = $_db->prepare('
-        INSERT INTO `order` (order_date, user_id)
-        VALUES (NOW(), ?)
-    ');
-    $stm->execute([$user->user_id]);
+    $now = date('Y-m-d H:i:s'); // Malaysia time
+    $stm = $_db->prepare('INSERT INTO `order` (order_date, user_id) VALUES (?, ?)');
+    $stm->execute([$now, $user_id]);
     $order_id = $_db->lastInsertId();
 
     $order = $order_id; // Use the order ID that was just inserted

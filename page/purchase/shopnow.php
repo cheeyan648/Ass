@@ -65,8 +65,6 @@ $products = $p->result;
     <?php endforeach; ?>
 </div>
 
-<h1>ehhehehe</h1>
-
 <br><br>
 <nav class="search">                       
     <form style="font-size: larger;" method="get" action="">

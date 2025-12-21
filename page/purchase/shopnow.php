@@ -56,7 +56,7 @@ $products = $p->result;
                 <span><?= $c->category_name ?></span>
             </a>
         <?php else: ?>
-            <a href="/page/purchase/shopnow.php?cat=<?= urlencode($c->category_name) ?>"
+            <a href="/shopnow.php?cat=<?= urlencode($c->category_name) ?>"
                class="category-card">
                 <span><?= $c->category_name ?></span>
             </a>

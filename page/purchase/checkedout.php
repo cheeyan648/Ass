@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 require_once '../../connect.php';
 require_once '../../_base.php';
 
@@ -14,7 +10,7 @@ if ($_POST) {
     // Insert into order table (fix: use order_date, tquantity, tprice)
     $now = date('Y-m-d H:i:s'); // Malaysia time
     $stm = $_db->prepare('INSERT INTO `order` (order_date, user_id) VALUES (?, ?)');
-    $stm->execute([$now, $user_id]);
+    $stm->execute([$now, $user->user_id]);
     $order_id = $_db->lastInsertId();
 
     $order = $order_id; // Use the order ID that was just inserted

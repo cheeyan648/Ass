@@ -301,7 +301,7 @@ nav.pager a.active {
     flex-wrap: wrap;
 }
 
-.admin-card {
+a.admin-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,7 +317,7 @@ nav.pager a.active {
     transition: all 0.3s ease;
 }
 
-.admin-card:hover {
+a.admin-card:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 12px 20px rgba(0,0,0,0.4);
     background: linear-gradient(135deg, #2575fc, #6a11cb);

@@ -56,7 +56,7 @@ $products = $p->result;
                 <span><?= $c->category_name ?></span>
             </a>
         <?php else: ?>
-            <a href="/shopnow.php?cat=<?= urlencode($c->category_name) ?>"
+            <a href="../../shopnow.php?cat=<?= urlencode($c->category_name) ?>"
                class="category-card">
                 <span><?= $c->category_name ?></span>
             </a>
@@ -64,6 +64,8 @@ $products = $p->result;
 
     <?php endforeach; ?>
 </div>
+
+<h1>ehhehehe</h1>
 
 <br><br>
 <nav class="search">                       

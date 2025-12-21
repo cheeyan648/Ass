@@ -52,7 +52,7 @@ $products = $p->result;
         <?php 
             $link = isset($_SESSION['user']) 
                 ? "/page/purchase/shopnow.php?user_id={$user->user_id}&cat={$c->category_name}"
-                : "/page/purchase/shopnow.php?cat={$c->category_name}";
+                : "/shopnow.php?cat={$c->category_name}";
         ?>
         <a href="<?= $link ?>" class="category-card">
             <span><?= $c->category_name ?></span>

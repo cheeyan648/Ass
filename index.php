@@ -52,8 +52,3 @@ ini_set('display_startup_errors', 1);
 </div><br>
 
 
-<?php 
-    include '_foot.php';
-?>
-
-

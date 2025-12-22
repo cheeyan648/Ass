@@ -41,7 +41,7 @@ $product_search = req('product_search');
         <div class="menu_nav">
             <nav>
                 <ul>
-                    <li class="shopnow"> 
+                    <li> 
                         <?php if (isset($_SESSION['user'])): ?>
                             <h1><a href="/page/purchase/shopnow.php?&user_id=<?= $user->user_id ?>">Shop Now</a></h1>
                         <?php else: ?>
@@ -49,7 +49,7 @@ $product_search = req('product_search');
                         <?php endif ?>
                     </li>
                     
-                    <li class="about">
+                    <li>
                         <h1><a href="/page/user/about.php">About</a></h1>
                     </li>
                     

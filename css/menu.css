@@ -12,7 +12,7 @@
 }
 
 /* Logo */
-.menu_icon img {
+.menu_icon a img {
     height: 45px;
 }
 
@@ -23,12 +23,12 @@
     font-weight: 700;
 }
 
-.menu_store_name span {
+.menu_store_name h1 span {
     color: #2563eb;
 }
 
 /* Navigation */
-.menu_nav ul li h1 a {
+.menu_nav nav ul li h1 a {
     color: #374151;
     font-size: 18px;
     font-weight: 600;

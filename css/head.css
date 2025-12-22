@@ -21,14 +21,14 @@
 #info {
     position: fixed;
     color: #fff;
-    background: #666;
+    background: #2563eb;
     border: 1px solid #333;
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 8px;
+    padding: 12px 24px;
     left: 50%;
     translate: -50% 0;
     z-index: 999;
-
+    font-weight: 600;
     top: -100px;
     opacity: 0;
 }
@@ -42,17 +42,6 @@
      10% { top:  100px; opacity: 1; }
      90% { top:  100px; opacity: 1; }
     100% { top: -100px; opacity: 0; }
-}
-
-/* =========================
-   FLASH MESSAGE
-   ========================= */
-
-#info {
-    background: #2563eb;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-weight: 600;
 }
 
 /* =========================

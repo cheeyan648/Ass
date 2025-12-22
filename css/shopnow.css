@@ -165,7 +165,7 @@ nav.pager a.active {
     font-weight: 800;
     letter-spacing: 2px;
     background: linear-gradient(45deg, #b2a5ff, #ff8fc7);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }

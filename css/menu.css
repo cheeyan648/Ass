@@ -1,8 +1,4 @@
-.menu_bar {
-    display: flex;
-    height: 100px;
-    background: rgb(51,0,102);
-}
+
 
 .menu_icon {
     display: flex;
@@ -11,66 +7,10 @@
     background: transparent; /* Ensure the background is transparent */
 }
 
-.menu_icon img {
-    height: 50px;
-    margin: 0;
-}
-
 .menu_icon a {
     align-items: center;
     display: flex;
     transform: translateX(40px);
-}
-
-.menu_store_name {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin: 0;
-    margin-right: 50px;
-}
-
-.menu_store_name  {
-    color: rgb(204, 153, 255);
-}
-
-.menu_nav {
-    display: flex;
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    flex-grow: 0.2;
-    transform: translateY(30px);
-}
-
-.menu_nav ul {
-    display: flex;
-    margin-left: -40px;
-    border-spacing: -30px;
-}
-
-.menu_nav ul li {
-    list-style-type: none;
-    margin-right: 100px;
-}
-
-.menu_nav ul li:last-child {
-    margin-right: 0;
-}
-
-.menu_nav ul > li {
-    display: flex;
-    font-size: 23px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.menu_nav ul li a:hover {
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    transform: scale(1.05);
 }
 
 .shopnow h1 a, .about h1 a{
@@ -83,40 +23,10 @@
     font-size: 140%;
 }
 
-.dropdown h1 {
-    font-weight: lighter;
-}
-
-.dropdown_menu {
-    opacity: 0;
-    transform: translateY(-20px);
-    visibility: hidden;
-    position: absolute;
-    background-color: white;
-    padding: 10px 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    color:black;
-    width: 180px;
-    border-radius: 8px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
 .dropdown_menu li {
     padding: 5px 10px;
     display: block;
     width: 100%;
-}
-
-.dropdown_menu li a {
-    color: black !important;
-    font-size: 20px !important;
-    text-decoration: none;
-    display: block;
-    padding: 5px;
-}
-
-.dropdown_menu li a:hover {
-    background-color: rgb(200, 200, 200);
 }
 
 .dropdown:hover .dropdown_menu {
@@ -124,22 +34,6 @@
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
-}
-
-.cart img{
-    position: absolute;
-    margin-right:0px;  
-    height: 50px;
-    margin-top: -5px;
-    background: transparent;
-}
-
-.history img{
-    position: absolute;
-    margin-right:0px;  
-    height: 80px;
-    margin-top: -17px;
-    background: transparent;
 }
 
 .search_bar {
@@ -166,25 +60,11 @@
     cursor: pointer;
 }
 
-.photo img {
-    margin-top: -10px;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
 .photo img:hover {
     transform: scale(1.1);
 }
 
-.username {
-    font-size: 18px;
-    padding: 10px;
-    color: aliceblue;
-}
+
 
 /* =========================
    GLOBAL HEADER (Grey · White · Blue)

@@ -4,7 +4,6 @@
     footer {
     background: #1f2937;
     padding: 20px 40px;
-    margin-top: 80px;
     }
 
     footer .text {

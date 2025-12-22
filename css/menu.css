@@ -1,71 +1,4 @@
 
-
-.menu_icon {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-    background: transparent; /* Ensure the background is transparent */
-}
-
-.menu_icon a {
-    align-items: center;
-    display: flex;
-    transform: translateX(40px);
-}
-
-.shopnow h1 a, .about h1 a{
-    color: white;
-    text-decoration: none;
-}
-
-.dropdown {
-    position: relative;
-    font-size: 140%;
-}
-
-.dropdown_menu li {
-    padding: 5px 10px;
-    display: block;
-    width: 100%;
-}
-
-.dropdown:hover .dropdown_menu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-}
-
-.search_bar {
-    display: flex;
-    align-items: center;
-    top: 10;
-    left: 550px;
-}
-
-.search_bar input {
-    width: 280px;
-    height: 40px;
-    border-radius: 20px;
-    outline: none;
-    font-size: 20px;
-    padding: 5px 40px;
-    border: 1px solid;
-}
-
-.search_bar #search_logo {
-    margin-left: -45px;
-    margin-top: -3px;
-    left: 10px;
-    cursor: pointer;
-}
-
-.photo img:hover {
-    transform: scale(1.1);
-}
-
-
-
 /* =========================
    GLOBAL HEADER (Grey · White · Blue)
    ========================= */
@@ -165,3 +98,70 @@
     background: #f1f5f9;
     color: #2563eb !important;
 }
+
+
+.menu_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    background: transparent; /* Ensure the background is transparent */
+}
+
+.menu_icon a {
+    align-items: center;
+    display: flex;
+    transform: translateX(40px);
+}
+
+.shopnow h1 a, .about h1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    font-size: 140%;
+}
+
+.dropdown_menu li {
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    top: 10;
+    left: 550px;
+}
+
+.search_bar input {
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 40px;
+    border: 1px solid;
+}
+
+.search_bar #search_logo {
+    margin-left: -45px;
+    margin-top: -3px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+}
+
+

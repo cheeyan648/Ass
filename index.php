@@ -22,9 +22,9 @@ ini_set('display_startup_errors', 1);
     $top_products = $stm->fetchAll();
 ?>
 
-<link rel="stylesheet" href="../css/menu.css">
-<link rel="stylesheet" href="../css/allbackgroundimg.css">
-<link rel="stylesheet" href="../css/shopnow.css">
+<link rel="stylesheet" href="/css/menu.css">
+<link rel="stylesheet" href="/css/allbackgroundimg.css">
+<link rel="stylesheet" href="/css/shopnow.css">
 
 <section class="top_seller">
     <h2 class="top-seller-title">🔥Top Seller🔥</h2>

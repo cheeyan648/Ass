@@ -63,10 +63,14 @@
     font-size: 23px;
     text-decoration: none;
     color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .menu_nav ul li a:hover {
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
 }
 
 .shopnow h1 a, .about h1 a{
@@ -89,10 +93,11 @@
     visibility: hidden;
     position: absolute;
     background-color: white;
-    padding: 5px 0;
-    box-shadow: 0px 2px 4px;
+    padding: 10px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     color:black;
     width: 180px;
+    border-radius: 8px;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -165,8 +170,14 @@
     margin-top: -10px;
     width: 60px;
     height: 60px;
-    border: 1px solid #333;
-    border-radius: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
 }
 
 .username {

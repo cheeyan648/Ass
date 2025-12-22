@@ -95,10 +95,6 @@ ini_set('display_startup_errors', 1);
     }
 </style>
 
-<div class="zero_img">
-    <img src="/icon/best-food-background.jpg" alt="Our zero image" style="height: 80%;">
-</div>
-
 <section class="top_seller">
     <h2 class="top-seller-title">🔥Top Seller🔥</h2>
 </section>
